@@ -7,7 +7,7 @@ install:
 jobs:
   include:
     - stage: analysis
-      go: "1.12.x"
+      go: "1.13.x"
       script: make analysis
 
     - stage: test
@@ -21,9 +21,7 @@ jobs:
       script: make test
 
     - stage: test
-      go: "1.12.x"
-      env:
-        - GO111MODULE=on
+      go: "1.13.x"
       script: make test
 
     - stage: test
