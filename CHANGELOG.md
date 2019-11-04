@@ -1,3 +1,10 @@
+## 0.23.0 (November 19th, 2018)
+
+IMPROVEMENTS:
+
+* Fix decimal serialization for numbers less than 1.
+* Migrate to Go 1.13
+
 ## 0.22.0 (November 19th, 2018)
 
 IMPROVEMENTS:
