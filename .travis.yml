@@ -16,34 +16,34 @@ jobs:
         - GO111MODULE=on
       script: make test
 
-    - stage: test
-      go: "tip"
-      script: make test
+#    - stage: test
+#      go: "tip"
+#      script: make test
 
-    - stage: test
+    - stage: unittest
       go: "1.13.x"
-      script: make test
+      script: make unit
 
-    - stage: test
-      go: "1.12.x"
-      script: make test
-
-    - stage: test
-      go: "1.11.2"
-      script: make test
-
-    - stage: test
-      go: "1.10.5"
-      script: make test
-
-    - stage: test
-      go: "1.9"
-      script: make test
-
-    - stage: test
-      go: "1.8"
-      script: make test
-
-    - stage: test
-      go: "1.7"
-      script: make test
+#    - stage: test
+#      go: "1.12.x"
+#      script: make test
+#
+#    - stage: test
+#      go: "1.11.2"
+#      script: make test
+#
+#    - stage: test
+#      go: "1.10.5"
+#      script: make test
+#
+#    - stage: test
+#      go: "1.9"
+#      script: make test
+#
+#    - stage: test
+#      go: "1.8"
+#      script: make test
+#
+#    - stage: test
+#      go: "1.7"
+#      script: make test
